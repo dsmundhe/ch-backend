@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="/styles/testimonials.css">
+</head>
+<body>
+    <!-- Testimonials Section -->
+    <main class="testimonials-container">
+        <h2>What Our Users Are Saying</h2>
+        <p>Real-life stories showing how our platform has helped individuals:</p>
+
+        <div class="testimonial">
+            <h3>John's Journey</h3>
+            <p>"I never thought I would be diagnosed with diabetes at 35. Thanks to the early detection tools provided by this platform, I was able to make necessary lifestyle changes and manage my condition effectively. The support I received from the community helped me stay motivated."</p>
+            <p><strong>- John, a user from a rural area</strong></p>
+        </div>
+
+        <div class="testimonial">
+            <h3>Maria's Success</h3>
+            <p>"Living in a low-resource setting made it difficult for me to access health services. This platform offered me a way to monitor my blood pressure and receive advice without having to travel far. I am now more informed and empowered to take charge of my health!"</p>
+            <p><strong>- Maria, a single mother</strong></p>
+        </div>
+
+        <div class="testimonial">
+            <h3>David's Experience</h3>
+            <p>"As a farmer, my health was always at the bottom of my priority list. After joining this platform, I realized how crucial it is to monitor my health. I learned about the symptoms of chronic diseases and how to recognize them early. The support I found here was life-changing."</p>
+            <p><strong>- David, a farmer</strong></p>
+        </div>
+
+        <div class="testimonial">
+            <h3>Amina's Story</h3>
+            <p>"I had been experiencing symptoms for months but didn’t know where to turn for help. This platform provided me with the tools to understand my symptoms better and access healthcare advice. I am grateful for the support and guidance I received!"</p>
+            <p><strong>- Amina, a teacher</strong></p>
+        </div>
+
+        <div class="cta-buttons">
+            <a href="/users/register" class="cta-button tp">Join Our Community</a>
+            <a href="/contact" class="cta-button">Contact Us</a>
+        </div>
+    </main>
+    <script>
+        function checkCookie(cookieName) {
+            const cookies = document.cookie.split(';'); 
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.startsWith(`${cookieName}=`)) {
+                    return true; 
+                }
+            }
+            return false; 
+        }
+    
+        window.onload = function () {
+            const joinButton = document.querySelector(".tp");
+            if (checkCookie('token')) {
+                joinButton.style.display = "none";
+            } else {
+                joinButton.style.display = "inline-block";
+            }
+        };
+    </script>
+    
+</body>
+</html>

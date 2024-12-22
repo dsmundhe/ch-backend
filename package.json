@@ -1,0 +1,30 @@
+{
+  "name": "chronic-diseases",
+  "version": "1.0.0",
+  "description": "This platform is designed to raise awareness and educate users about chronic diseases, focusing on early detection, management strategies, and real-life testimonials from individuals who have benefited from the resources provided here. The project aims to support individuals, especially those in low-resource settings, by offering accessible information, tools, and a supportive community.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cloudinary": "^1.41.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.2",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0"
+  }
+}

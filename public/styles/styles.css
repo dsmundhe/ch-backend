@@ -1,0 +1,541 @@
+ 
+/* Styling for additional pages */
+h1,
+p {
+  margin: 1.5rem;
+  color: #444;
+}
+
+button {
+  background-color: wheat;
+}
+/* General Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: wheat;
+  margin: 0;
+}
+
+/* Form Container Styling */
+.form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+}
+
+input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #888;
+  outline: none;
+}
+
+/* Submit Button Styling */
+button {
+  padding: 0.8rem;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Success Message Styling */
+.success-message {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #28a745;
+}
+/* Account Switch Prompt */
+.account-switch {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.account-switch a {
+  color: #444;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.account-switch a:hover {
+  color: #000;
+}
+
+.feedback-container h2 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: center; /* Center text */
+}
+
+.feedback-container p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: center; /* Center text */
+}
+
+.feedback-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+  width: 100%; /* Full width for labels */
+}
+
+.feedback-container input,
+.feedback-container textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.feedback-container input:focus,
+.feedback-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.feedback-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width for button */
+}
+
+.feedback-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Success Message */
+.success-message {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
+  text-align: center; /* Center success message */
+}
+/* Call to Action Page Styles */
+body {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0;
+  background-color: wheat; /* Background color */
+}
+
+.cta-container {
+  width: 90%;
+  max-width: 800px; /* Maximum width for the CTA container */
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text */
+  margin-top: 250px;
+}
+
+.cta-container h2 {
+  font-size: 2.5rem; /* Larger font for the main headings */
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.cta-container h3 {
+  font-size: 1.8rem; /* Slightly smaller for subheadings */
+  color: #555;
+  margin-top: 2rem;
+}
+
+.cta-container p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.cta-buttons {
+  display: flex; /* Flexbox for button layout */
+  justify-content: space-around; /* Space buttons evenly */
+  margin: 2rem 0; /* Margin around the button section */
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.cta-container ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 1.5rem 0; /* Margin for spacing */
+  text-align: left; /* Align text to the left */
+}
+
+.cta-container li {
+  margin: 0.5rem 0; /* Margin for list items */
+  color: #444;
+}
+
+.cta-image {
+  width: 50%; /* Make image responsive */
+  max-width: 500px; /* Set maximum width */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 1.5rem; /* Margin above the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+/* Contact Page Styles */
+.contact-container {
+  display: flex;
+  flex-direction: column; /* Column layout for form elements */
+  align-items: center; /* Center content */
+  justify-content: center; /* Center content vertically */
+  width: 90%;
+  max-width: 600px; /* Maximum width for the contact container */
+  padding: 2rem;
+  background-color: #f8f8f8; /* Light background for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the contact container */
+  text-align: center; /* Center text */
+}
+
+.contact-container h2 {
+  font-size: 2.5rem; /* Larger font for the heading */
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.contact-container p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.contact-container label {
+  margin-top: 1rem;
+  text-align: left; /* Align label text to the left */
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 150%; /* Full width for inputs */
+  max-width: 600px; /* Set a maximum width for input fields */
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contact-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  margin-top: 1.5rem; /* Space above button */
+}
+
+.contact-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.success-message {
+  margin-top: 1rem;
+  color: green; /* Color for success message */
+  font-weight: bold;
+}
+/* Learn More Page Styles */
+.learn-more-container {
+  display: flex;
+  flex-direction: column; /* Column layout for content */
+  align-items: center; /* Center content */
+  justify-content: center; /* Center content vertically */
+  width: 90%;
+  max-width: 800px; /* Maximum width for the learn more container */
+  padding: 2rem;
+  background-color: #f8f8f8; /* Light background for the page */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the learn more container */
+  text-align: center; /* Center text */
+}
+
+.learn-more-container h2 {
+  font-size: 2.5rem; /* Larger font for the main heading */
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.learn-more-container h3 {
+  font-size: 1.8rem; /* Font size for subheadings */
+  color: #333;
+  margin: 1.5rem 0; /* Spacing around subheadings */
+}
+
+.learn-more-container p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.learn-more-container ul {
+  list-style-type: disc; /* Bullet points for lists */
+  padding-left: 20px; /* Padding for lists */
+  text-align: left; /* Align text to the left */
+  color: #555;
+}
+
+.learn-more-container .cta-buttons {
+  margin-top: 2rem; /* Space above buttons */
+}
+
+.learn-more-container .cta-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 0.5rem; /* Margin between buttons */
+}
+
+.learn-more-container .cta-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+/* Testimonials Page Styles */
+.testimonials-container {
+  display: flex;
+  flex-direction: column; /* Column layout for content */
+  align-items: center; /* Center content */
+  justify-content: center; /* Center content vertically */
+  width: 90%;
+  max-width: 900px; /* Maximum width for testimonials container */
+  padding: 2rem;
+  background-color: #f8f8f8; /* Light background for the page */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the testimonials container */
+  text-align: center; /* Center text */
+  margin-top: 550px;
+}
+
+.testimonials-container h2 {
+  font-size: 2.5rem; /* Larger font for the main heading */
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.testimonials-container p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Scrollable Inner Container */
+.testimonials-inner-container {
+  max-height: 400px; /* Limit height to allow scrolling */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  width: 100%; /* Full width */
+  padding: 1rem; /* Padding inside the inner container */
+  background-color: #fff; /* White background for the testimonials */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.testimonial {
+  padding: 1rem; /* Padding inside each testimonial box */
+  margin: 1rem 0; /* Space between testimonials */
+  border-bottom: 1px solid #eee; /* Divider between testimonials */
+}
+
+.testimonial:last-child {
+  border-bottom: none; /* Remove border from last testimonial */
+}
+
+.testimonial h3 {
+  color: #007bff; /* Blue color for testimonial titles */
+  margin-bottom: 0.5rem;
+}
+
+.cta-buttons {
+  margin-top: 2rem; /* Space above buttons */
+}
+
+.cta-buttons .cta-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 0.5rem; /* Margin between buttons */
+}
+
+.cta-buttons .cta-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+/* Features Overview Styles */
+.features-container {
+  display: flex;
+  flex-direction: column; /* Column layout for content */
+  align-items: center; /* Center content */
+  justify-content: center; /* Center content vertically */
+  width: 100%;
+  max-width: 900px; /* Maximum width for features container */
+  padding: 2rem;
+  background-color: #f8f8f8; /* Light background for the page */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the features container */
+  text-align: center; /* Center text */
+  margin-top: 340px;
+}
+
+.features-container h2 {
+  font-size: 2.5rem; /* Larger font for the main heading */
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.features-container p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid for Feature Items */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive grid layout */
+  gap: 1.5rem; /* Space between grid items */
+  margin-bottom: 2rem; /* Space below grid */
+}
+
+.feature-item {
+  background-color: #fff; /* White background for feature items */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  overflow: hidden; /* Ensure children don’t overflow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.feature-item img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Transition for image hover effect */
+}
+
+.feature-item h3 {
+  color: #007bff; /* Blue color for feature titles */
+  margin: 0.5rem 0; /* Space around the title */
+}
+
+.feature-item p {
+  padding: 0 1rem; /* Padding for the description */
+  color: #555; /* Description text color */
+}
+
+/* Hover Effects */
+.feature-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 2px 5px 10px rgba(180, 169, 68, 0.89); /* Darker shadow on hover */
+}
+
+.feature-item:hover img {
+  transform: scale(1.05); /* Slight zoom on image hover */
+}
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Stack features vertically on small screens */
+  }
+}
+
+.cta-buttons {
+  margin-top: 2rem; /* Space above buttons */
+}
+
+.cta-buttons .cta-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 0 0.5rem; /* Margin between buttons */
+}
+
+.cta-buttons .cta-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}

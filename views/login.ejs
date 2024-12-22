@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/login.css">
+
+</head>
+<body>
+    <!-- Login Form Section -->
+    <main class="form-container">
+        <h2>Login</h2>
+        <form action="/users/login" method="post" id="loginForm" >
+
+<!-- 
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" title="Enter a valid 10-digit mobile number"> -->
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+            <p id="successMessage" class="success-message" style="display: none;">Submitted Successfully!</p>
+        </form>
+        
+        <!-- Sign Up Prompt -->
+        <p class="account-switch">
+            Already have an account? <a href="/users/register">Sign Up</a>
+        </p>
+    </main>
+
+    <script>
+        // Handle form submission
+        // function handleSubmit(event) {
+        //     event.preventDefault(); // Prevent form submission
+        //     document.getElementById("successMessage").style.display = "block";
+        //     document.getElementById("loginForm").reset();
+        // }
+    </script>
+</body>
+</html>

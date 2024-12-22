@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="/styles/feedback.css">
+</head>
+<body>
+    <!-- Feedback Form Section -->
+    <main class="feedback-container">
+        <h2>Feedback</h2>
+        <p>We value your feedback! Please let us know your thoughts on our website.</p>
+        <form id="feedbackForm" action="/feedback" method="post" >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Your Feedback</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+            <p id="feedbackMessage" class="success-message" style="display: none;">Feedback Submitted Successfully!</p>
+        </form>
+    </main>
+
+    <script>
+        // Handle feedback form submission
+        // function handleFeedback(event) {
+        //     event.preventDefault(); // Prevent form submission
+        //     document.getElementById("feedbackMessage").style.display = "block";
+        //     document.getElementById("feedbackForm").reset();
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Detection of Chronic Diseases</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="/features">Features Overview</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/call-to-action">Call to Action</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="heading-section">
+            <h1 class="main-heading">Early Detection of Chronic Diseases</h1>
+            <p class="description">Our platform helps monitor health indicators to catch signs of chronic diseases early, offering preventive care and health insights.</p>
+            <div class="buttons">
+                <!-- <button onclick="window.location.href='login.html'">Login</button> -->
+                <a href="/users/login"class="button login" id="login">Login</a>
+                <a href="/users/register" class="button signup tp" id="signup">Sign Up</a>
+                <a href="/main/uploaddocs"class="button login tp1" id="upload">Upload Yours Past Reports</a>
+                <a href="/main/testyourself" class="button signup tp1" id="test">Test Yourself</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        function checkCookie(cookieName) {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.startsWith(`${cookieName}=`)) {
+                    return true; 
+                }
+            }
+            return false;
+        }
+    
+        window.onload = function () {
+            const login = document.getElementById("login");
+            const signup = document.getElementById("signup");
+            const upload = document.getElementById("upload");
+            const test = document.getElementById("test");
+            if (checkCookie('token')) {
+                upload.style.display = "inline-block";
+                test.style.display = "inline-block";
+                login.style.display="none";
+                signup.style.display="none";
+            } else {
+                login.style.display = "inline-block";
+                signup.style.display = "inline-block";
+                upload.style.display="none";
+                test.style.display="none";
+
+            }
+        };
+    </script>
+</body>
+</html>
